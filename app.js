@@ -143,12 +143,7 @@ const displayAllBillionaires = (allFourHundred) => {
 
       return billion;
     };
-    // const sharePrice = billionaire.financialAssets
-    //   ? billionaire.financialAssets.reduce(
-    //       (total, asset) => total + asset.numberOfShares * asset.sharePrice,
-    //       0
-    //     )
-    //   : 0;
+
     allBillionaireDiv.innerHTML = `
     <div class="card h-100" style="background-color: #0E1B34; color: white;">
       <h4 class="card-title text-center my-3">${billionaire.personName}</h4>
@@ -181,13 +176,3 @@ const displayAllBillionaires = (allFourHundred) => {
     allBillionaires.appendChild(allBillionaireDiv);
   });
 };
-
-// const counter = allFourHundred => {
-//   let count =0;
-//   allFourHundred.forEach((billionaire) => {
-//     if(!billionaire.squareImage) {
-//       count++
-//     }
-//   })
-//   console.log(count);
-// }
